@@ -73,6 +73,11 @@ def get_productos():
     return jsonify(data)
 
 
+@app.route('/', methods=['GET'])
+def get_index():
+    return "HOLA MUNDO"
+
+
 @app.route('/kangu/<tracking_number>', methods=['GET'])
 def rastrear_pedido_kangu(tracking_number):
     token = "040c0c1e1850e2aa468ea3efb2dc1735"  # Tu token aquí
