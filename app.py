@@ -4,7 +4,7 @@ from flask_cors import CORS  # Importar la extensión
 
 app = Flask(__name__)
 # CORS(app)  # Habilitar CORS para toda la aplicación
-CORS(app, origins='http://127.0.0.1:5500')
+CORS(app, origins='https://sinh.com.br')
 
 
 # Datos de ejemplo (puedes usar una base de datos en su lugar)
